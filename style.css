@@ -8,6 +8,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 :root {
@@ -27,7 +28,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -47,28 +48,26 @@ header {
     min-height: 42px;
     position: relative;
     width: 100%;
-    margin-bottom: 0px
-    margin-top: 0px;
+    margin: 0 auto;
 }
 
 header nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 100px;
+    gap: 150px;
     width: 100%;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    backgrounf: none;
     object-fit: contain;
     border-radius: 8px;
 }
 
 .logo img {
-    width: 260px;
+    width: 230px;
     height: 105px;
     object-fit: contain;
 }
@@ -86,7 +85,7 @@ header nav {
 }
 
 .nav-links a:hover {
-    color: #ff4d4d
+    color: #ff4d4d;
 }
 
 .nav-links a.active {
@@ -122,15 +121,13 @@ header nav {
 }
 
 .hero {
+    position: relative;
     text-align: center;
     padding: 100px 20px;
-    color:#ff0000
+    color:#ff0000;
     display: flex;
-    align-items: flex end;
+    align-items: flex-end;
     justify-content: center;
-}
-
-.hero {
     position: relative;
     width: 100%;
     min-height: 650px;
@@ -154,11 +151,17 @@ header nav {
     padding: 8px 30px;
     box-shadow: 0 0 25px rgba(255, 0, 0, 0.35);
 }
+.hero-content-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color:#ff0000;
 
-.hero-content h1,
-.hero-content p {
-  color: #d00000;
-  text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    background: linear-gradient(to bottom, #bc0000 0%, #000000 100%);
+    padding: 36px 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .latest-news {
