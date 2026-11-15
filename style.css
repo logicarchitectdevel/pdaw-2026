@@ -159,9 +159,161 @@ header nav {
     text-align: center;
     color:#ff0000;
 
-    background: linear-gradient(to bottom, #bc0000 0%, #000000 100%);
+    background: linear-gradient(to bottom, #C10004 0%, #000000 100%);
     padding: 36px 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.discography {
+    padding: 60px 40px;
+    background-color: #111;
+    color: #ffffff;
+}
+
+.dicography h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 32px;
+    color: #ff0000;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.featured-album {
+    min-height: 650px;
+    padding: 60px 40px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.featured-album h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 32px;
+    color: #ff0000;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.album-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.album-card {
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.album-card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.album-card h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.album-card p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    .album-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        width: 90%;
+        bottom: 200px;
+    }
+
+    .hero-content-bottom {
+        padding: 20px;
+    }
+}
+
+.members {
+    padding: 60px 40px;
+    background-color: #000;
+    color: #ffffff;
+    text-align: center;
+}
+
+.members h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 32px;
+    color: #ff0000;
+    margin-bottom: 40px;
+}
+
+.members-image {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.members-image img {
+    width: 100%;
+    display: block;
+}
+
+.member-link {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.member-link:hover {
+    background-color: rgba(255, 0, 0, 0.15);
+}
+
+.ethan {
+    left: 16.2%;
+    top: 4%;
+    width: 16.2%;
+    height: 82.5%;
+}
+
+.damiano {
+    left: 33.3%;
+    top: 0;
+    width: 16.1%;
+    height:94.7%;
+}
+
+.victoria {
+    left: 50.4%;
+    top: 0;
+    width: 16.1%;
+    height: 100%;
+}
+
+.thomas {
+    left: 67.5%;
+    top: 11.8%;
+    width: 16.1%;
+    height: 62.7%;
 }
 
 .latest-news {
