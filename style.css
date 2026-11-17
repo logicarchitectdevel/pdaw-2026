@@ -166,7 +166,7 @@ header nav {
 
 .discography {
     padding: 60px 40px;
-    background-color: #111;
+    background-color: #000000;
     color: #ffffff;
 }
 
@@ -181,7 +181,7 @@ header nav {
 .featured-album {
     min-height: 650px;
     padding: 60px 40px;
-    background-color: #1a1a1a;
+    background-color: #000000;
     color: #ffffff;
 }
 
