@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <script src="gallery.js" defer></script>
 </head>
 <body>
 
@@ -55,25 +56,25 @@
                     <img src="ab67616d0000b273fa0ab3a28b5c52d8a5f97045.jpg" alt="Chosen">
                     <h3>Chosen</h3>
                     <p>2017</p>
-                    <a href="music.html" class="btn btn-outline">Listen Now</a>
+                    <a href="music.html#chosen" class="btn btn-outline">Listen Now</a>
                 </div>
                 <div class="album-card">
                     <img src="Il ballo della vita.jpg" alt="Il ballo della vita">
                     <h3>Il ballo della vita</h3>
                     <p>2018</p>
-                    <a href="music.html" class="btn btn-outline">Listen Now</a>    
+                    <a href="music.html#il-ballo-della-vita" class="btn btn-outline">Listen Now</a>    
                 </div>
                 <div class="album-card">
                     <img src="Teatro d ira.jpg" alt="Teatro d'ira: Vol. I">
                     <h3>Teatro d'ira: Vol. I</h3>
                     <p>2021</p>
-                    <a href="music.html" class="btn btn-outline">Listen Now</a>
+                    <a href="music.html#teatro-d-ira-vol-i" class="btn btn-outline">Listen Now</a>
                 </div>
                 <div class="album-card">
                     <img src="Rush.jpg" alt="Rush!">
                     <h3>Rush!</h3>
                     <p>2023</p>
-                    <a href="music.html" class="btn btn-outline">Listen Now</a>
+                    <a href="music.html#rush" class="btn btn-outline">Listen Now</a>
                 </div>
             </div>
         </section>
@@ -90,8 +91,88 @@
         <a href="thomas.html" class="member-link thomas" aria-label="Thomas Raggi"></a>
     </div>
         </section>
-         <section class="member-profile">
 
+        <section class="fan-gallery">
+            <h2>FAN GALLERY</h2>
+
+                 <p class="gallery-description">
+                 Moments, performances and memories of Måneskin.
+                 </p>
+
+     
+<div class="gallery-grid">
+
+    <div class="gallery-item">
+        <img src="x-factor_2017.webp" alt="Måneskin at X Factor Italia, 2017">
+        <p class="gallery-date">2017 — Milan, Italy</p>
+        <p class="gallery-caption">X Factor Italia</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="sanremo_2021.webp" alt="Måneskin at Sanremo, 2021">
+        <p class="gallery-date">2021 — Sanremo, Italy</p>
+        <p class="gallery-caption">Sanremo Music Festival</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="eurovision.jpg" alt="Måneskin at Eurovision, 2021">
+        <p class="gallery-date">2021 — Rotterdam, Netherlands</p>
+        <p class="gallery-caption">Eurovision Song Contest — Winners</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="rolling-stones-oppener.webp" alt="Måneskin opening for The Rolling Stones">
+        <p class="gallery-date">2021 — Las Vegas, USA</p>
+        <p class="gallery-caption">Opening for The Rolling Stones</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="sanremo_2022.jpg" alt="Måneskin at Sanremo, 2022">
+        <p class="gallery-date">2022 — Sanremo, Italy</p>
+        <p class="gallery-caption">Sanremo Music Festival — Special Guests</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="coachella_2022.jpg" alt="Måneskin at Coachella, 2022">
+        <p class="gallery-date">2022 — Indio, California, USA</p>
+        <p class="gallery-caption">Coachella Valley Music and Arts Festival</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="roma_2022.avif" alt="Måneskin performing in Rome, 2022">
+        <p class="gallery-date">2022 — Rome, Italy</p>
+        <p class="gallery-caption">Circo Massimo Concert</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="mtv_vma_2022.jpg" alt="Måneskin at MTV Video Music Awards, 2022">
+        <p class="gallery-date">2022 — Newark, New Jersey, USA</p>
+        <p class="gallery-caption">MTV Video Music Awards</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="Glastonbury-2023-credit-Jenn-Five-Maneskin-header.webp" alt="Måneskin at Glastonbury, 2023">
+        <p class="gallery-date">2023 — Pilton, England</p>
+        <p class="gallery-caption">Glastonbury Festival</p>
+    </div>
+
+</div>
+</section>
+
+             <div class="lightbox" id="lightbox">
+                 <button class="lightbox-close" aria-label="Close">&times;</button>
+
+                 <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+
+                 <img src="" alt="" id="lightbox-img">
+
+                 <div class="lightbox-info">
+                     <p class="gallery-date" id="lightbox-date"></p>
+                     <p class="gallery-caption" id="lightbox-caption"></p>
+                 </div>
+
+                 <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+             </div>
         <section class="latest-news">
             <h2>Latest News</h2>
 
@@ -113,16 +194,6 @@
                     <p>Check out our exclusive interview with Måneskin where they discuss their creative process.</p>
                     <a href="#" class="btn btn-outline">Read More</a>
                 </article>
-            </div>
-        </section>
-
-        <section class="fan-gallery">
-            <h2>Fan Gallery</h2>
-
-            <div class="gallery-grid">
-                <img src="images/gallery1.jpg" alt="Måneskin live performance">
-                <img src="images/gallery2.jpg" alt="Måneskin concert">
-                <img src="images/gallery3.jpg" alt="Måneskin band photo">
             </div>
         </section>
     </main>
